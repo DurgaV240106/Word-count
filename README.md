@@ -6,20 +6,31 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-
+Open the file in read mode and handle it in test mood.
 ### Step 2: 
- 
+ Read the text using read() function.
 ### Step 3: 
-
+Split the text using space separator.We assume that words in a sentance are separted by a space character.
 ### Step 4:  
-
+The length of the split list should equal the numbers of words in the test file.
 ### Step 5: 
-
+You can refine the count by cleaning the string prior to splitting or validating the words after splitting.
 ### Step 6: 
-
+End the program.
 ## PROGRAM:
-
+```
+## DEVELOPED BY: DURGA V
+## REFERENCE NUMBER: 23013532
+num_words =0
+file1 = open("durga.txt", "r")
+with open('durga.txt','r') as file1:
+    for i in file1:
+        word =i.split()
+        num_words += len(word)
+print("Number of words={}".format(num_words))
+```
 ### OUTPUT:
+<img width="663" alt="Screenshot 2024-01-03 005426" src="https://github.com/DurgaV240106/Word-count/assets/144870878/3be6532f-2e7b-4e40-a124-4166c5f499b3">
 
 
 
